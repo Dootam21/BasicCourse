@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { SafeAreaView, Text, ImageBackground, View, Image } from 'react-native';
 import styles from './styles.js';
 import Header from '../Header/Header.js'
-const Wrapper = ({ renderData }) => {
+const Wrapper = ({ children }) => {
     return (
         <SafeAreaView style={styles.container}>
             <ImageBackground
@@ -12,7 +12,7 @@ const Wrapper = ({ renderData }) => {
                 <Header />
                 <View style={styles.wrap}>
                     {
-                        renderData
+                        children
                     }
                 </View>
             </ImageBackground>

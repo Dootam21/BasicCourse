@@ -14,7 +14,7 @@ const HomeScreen = ({ navigation }) => {
         navigation.navigate('Login');
     };
     return (
-        <Wrapper renderData={
+        <Wrapper>
             <TouchableOpacity onPress={() => handleLogout()} style={styles.btnLogin}>
                 <LinearGradient
                     colors={['#FF5789', '#FF9B9C']}
@@ -25,7 +25,7 @@ const HomeScreen = ({ navigation }) => {
                     <Text style={styles.txtLogin}>Log Out</Text>
                 </LinearGradient>
             </TouchableOpacity>
-        } />
+        </Wrapper>
     );
 };
 
